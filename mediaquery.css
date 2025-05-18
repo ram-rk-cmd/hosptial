@@ -1,0 +1,110 @@
+/* Media Queries */
+
+/* Small Devices (Tablets) */
+@media (max-width: 768px) {
+    nav {
+        position: static;
+        padding: 10px;
+    }
+
+    .doc1 {
+        display: none;
+    }
+
+    .bed-category {
+        width: 45%; /* Two columns on tablets */
+        margin-bottom: 15px;
+    }
+
+    .bed-info {
+        justify-content: space-around;
+        flex-wrap: wrap; /* Ensure wrapping */
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; /* Ensure column layout for small screens */
+        width: 100%;
+        padding: 10px; /* Reduced padding for smaller screens */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .bed-category {
+        width: 100%; /* Full width for small screens */
+        margin-bottom: 10px; /* Space between bed categories */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    .bed-info {
+        width: 100%; /* Full width for container */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        padding: 0; /* Remove any padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .header h1 {
+        font-size: 1.2em; /* Smaller font size for header */
+    }
+
+    .call-button, .admission-button {
+        width: 100%; /* Full width buttons */
+        padding: 8px;
+        font-size: 0.9em;
+        box-sizing: border-box;
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+
+    .bed-count, .vacant-bed {
+        font-size: 1.4em; /* Adjusted font size */
+    }
+
+    .spec-logo img {
+        width: 60px; /* Adjust image size */
+        height: 60px;
+    }
+
+    nav {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: flex-start; /* Align nav items to the left */
+        width: 100%; /* Full width for nav */
+    }
+}
+
+/* Medium Devices (Desktops) */
+@media (max-width: 992px) {
+    .container {
+        width: 80%; /* Adjusted width for medium devices */
+    }
+
+    .bed-category {
+        width: 30%; /* Three columns on larger screens */
+    }
+
+    .spec-logo img {
+        width: 65px; /* Increase image size */
+        height: 65px;
+    }
+
+    .header h1 {
+        font-size: 1.8em; /* Larger font size for headers */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (max-width: 1200px) {
+    .doc-doc {
+        width: 85%; /* Adjust container width */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .header {
+        text-align: left;
+    }
+
+    .bed-info {
+        justify-content: space-between; /* Adjust spacing */
+    }
+}

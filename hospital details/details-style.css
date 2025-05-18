@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: rgb(132, 222, 192);
+    ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    background-color: rgb(69, 145, 148);
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    width: 30%;
+    background-color: #f2f2f2;
+}
+
+td {
+    width: 70%;
+}
+#blood-availabiliity-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blood-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:3rem;
+    gap: 8rem;
+    justify-content: center;
+    
+}
+.h1-blood{
+    color: white;
+    font-size: 40px;
+    background-color: red;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 20px;
+    margin: 20px;
+    height: 70px;
+}
+.blood{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    
+}
+.blood img{
+    width: 100px;
+    height: 100px;
+    gap:2rem;
+
+}
+.available{
+    background-color: rgb(16, 232, 16);
+    
+    padding-top:10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    width: 80px;
+
+}
+.blood p{
+    font-size: 40px;
+}
+#bed-info {
+    background-color:rgb(132, 222, 192);
+    margin: 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.bed-category {
+    background-color: #e6ffee;
+    border: 1px solid #c2e0c6;
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    width: 18%; /* Reduced width */
+    padding: 10px; /* Reduced padding */
+    margin: 20px;
+}
+
+.bed-category h2 {
+    margin: 0;
+    color: #7b7b7b;
+    font-size: 1.2em;
+}
+
+.bed-count {
+    color: #0000ff;
+    font-size: 1.8em; /* Reduced font size */
+    margin: 5px 0;
+}
+
+.vacant-bed {
+    color: #008000;
+    font-size: 1.8em; /* Reduced font size */
+    margin: 5px 0;
+}
+
+.detail-breakup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.detail-breakup a {
+    color: #0000ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+.appoinment-btn{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+#bed-availability{
+    margin-top: 6rem;
+}
+.appoinment-btn button{
+    background-color: rgb(69, 145, 148);
+    width: auto;
+    height: 40px;
+    color: white;
+   
+    border: none;
+    border-radius:10px ;
+font-size: 20px;
+cursor:pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
